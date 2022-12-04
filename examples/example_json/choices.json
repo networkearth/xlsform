@@ -1,0 +1,113 @@
+{
+    "aquatic_type": {
+        "floodplain": "Floodplain (overflow/oxbow)",
+        "forested": "Forested wetland",
+        "herbaceous": "Herbaceous wetland",
+        "open": "Open water",
+        "peatland": "Peatland (acidic fen or bog)",
+        "shrub": "Shrub wetland",
+        "stream": "Intermittent stream reach",
+        "unknown": "Unknown"
+    },
+    "barrier_reason": {
+        "aerial": "Aerial photo estimate",
+        "field": "Field estimate",
+        "gis": "GIS",
+        "other": "Other"
+    },
+    "hydrology": {
+        "none": "No inlet/outlet",
+        "permanent": "Permanent inlet/outlet",
+        "temporary": "Temporary inlet/outlet",
+        "unknown": "Unknown"
+    },
+    "hydroperiod": {
+        "permanent": "Permanent",
+        "seasonal": "Seasonal",
+        "semi_permanent": "Semi-permanent",
+        "unknown": "Unknown"
+    },
+    "land_use": {
+        "forested_wetland": "Forested wetland",
+        "grassland": "Agricultural/grassland/meadow",
+        "marsh": "Emergent marsh/scrub-scrub wetland",
+        "other": "Other",
+        "residential": "Residential/commercial",
+        "upland_forest": "Upland forest"
+    },
+    "landscape_setting": {
+        "pool_complex": "Pool part of pool complex",
+        "upload_depression": "Upload depression",
+        "wetland": "Pool part of larger wetland system",
+        "wildlife_corridor": "Pool part of wildlife corridor"
+    },
+    "methodology": {
+        "habitat_assessment": "Habitat Assessment",
+        "incidental": "Incidental (no methodology)",
+        "meander_survey": "Meander Survey",
+        "other": "Other"
+    },
+    "owner": {
+        "dcr": "DCR",
+        "other": "Other",
+        "town": "Town",
+        "trustees": "Trustees"
+    },
+    "parent_material": {
+        "alluvium": "Alluvium",
+        "coastal": "Coastal marine sediments",
+        "dense_till": "Dense till",
+        "fluvial": "Glacial fluvial - outwash",
+        "loose_till": "Loose till",
+        "peat": "Peat"
+    },
+    "percent_range": {
+        "0": 0,
+        "33": "1 - 33%",
+        "67": "34 - 67%",
+        "100": "> 67%"
+    },
+    "pool_origin": {
+        "depression": "Natural depression",
+        "human_made": "Human-made pool/ditch",
+        "other": "Other",
+        "unknown": "Unknown",
+        "wetland": "Created wetland/pool"
+    },
+    "substrate": {
+        "mineral": "Mineral soil",
+        "organic": "Organic matter (peat/muck)",
+        "unknown": "Unknown"
+    },
+    "tree_species": {
+        "birch": "Birch",
+        "hickory": "Hickory",
+        "maple": "Maple",
+        "oak": "Oak",
+        "other": "Other",
+        "pine": "Pine"
+    },
+    "water_quality": {
+        "algal": "High algae content",
+        "clear": "Clear",
+        "tannic": "Tannic",
+        "turbid": "High turbidity",
+        "unknown": "Unknown"
+    },
+    "weather": {
+        "clear": "Clear",
+        "overcast": "Overcast",
+        "rain": "Rain",
+        "snow": "Sleet/snow",
+        "sunny": "Sunny"
+    },
+    "yes_no": {
+        "no": "No",
+        "yes": "Yes"
+    },
+    "yes_no_unknown": {
+        "no": "No",
+        "unknown": "Unknown",
+        "yes": "Yes"
+    }
+}

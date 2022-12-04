@@ -1,0 +1,600 @@
+[
+    {
+        "appearance": "field-list",
+        "label": "Survey & Documenter Information",
+        "name": "survey_info",
+        "survey": [
+            {
+                "appearance": "w4",
+                "hint": "Please study the EwA VP Protocol prior to surveying - follow proper etiquette as explained in that protocol.",
+                "label": "I have read and agreed to EwA's pool documentation protocol and EwA's field rules of conduct",
+                "name": "compliant",
+                "required": "yes",
+                "type": "select_one yes_no"
+            },
+            {
+                "appearance": "w4",
+                "label": "Email (of the session leader)",
+                "name": "email",
+                "required": "yes",
+                "type": "text"
+            },
+            {
+                "appearance": "w4",
+                "hint": "List all the surveyors performing this pool documentation.",
+                "label": "Individual or team",
+                "name": "team",
+                "required": "yes",
+                "type": "text"
+            },
+            {
+                "appearance": "w2",
+                "label": "Date",
+                "name": "date",
+                "required": "yes",
+                "type": "date"
+            },
+            {
+                "appearance": "w2",
+                "label": "Time",
+                "name": "time",
+                "required": "yes",
+                "type": "time"
+            },
+            {
+                "appearance": "w4 minimal",
+                "label": "Predominant weather",
+                "name": "weather",
+                "required": "yes",
+                "type": "select_one weather"
+            },
+            {
+                "appearance": "w4",
+                "label": "Temperature (Celcius)",
+                "name": "temperature",
+                "required": "yes",
+                "type": "decimal"
+            },
+            {
+                "appearance": "w4",
+                "label": "Survey methodology",
+                "name": "methodology",
+                "required": "yes",
+                "type": "select_multiple methodology"
+            }
+        ],
+        "type": "begin group"
+    },
+    {
+        "appearance": "field-list",
+        "label": "Site Information",
+        "name": "site_info",
+        "survey": [
+            {
+                "appearance": "w4",
+                "hint": "According to Matt Gage pool code if known / Reply NA if not known at time of survey",
+                "label": "Pool ID",
+                "name": "pool_id",
+                "required": "yes",
+                "type": "text"
+            },
+            {
+                "appearance": "w4",
+                "hint": "If known (as listed in MassOliver's Vernal Pool layer) / Reply NA otherwise",
+                "label": "PVP or CVP ID",
+                "name": "pvp_cvp_id",
+                "required": "yes",
+                "type": "text"
+            },
+            {
+                "appearance": "w4",
+                "hint": "Use the map to locate the pool being documented. Place the pushpin roughly at the center of the pool.",
+                "label": "Pool geographic location",
+                "name": "location",
+                "required": "yes",
+                "type": "geopoint"
+            },
+            {
+                "appearance": "w4 minimal",
+                "label": "Property Owner",
+                "name": "owner",
+                "required": "yes",
+                "type": "select_one owner"
+            },
+            {
+                "appearance": "w4 multiline",
+                "hint": "Indicate proximity to a trail blaze, include/describe specific topographic marker and ecological features",
+                "label": "Describe distinctive features visible from or near the pool",
+                "name": "distinctive_features",
+                "type": "text"
+            }
+        ],
+        "type": "begin group"
+    },
+    {
+        "appearance": "field-list",
+        "label": "Pool Characteristics",
+        "name": "pool_characteristics",
+        "survey": [
+            {
+                "appearance": "w4",
+                "hint": "0 if dried at time of survey / leave empty if not known",
+                "label": "Approximate length (meters)",
+                "name": "length",
+                "type": "integer"
+            },
+            {
+                "appearance": "w4",
+                "hint": "0 if dried at time of survey / leave empty if not known",
+                "label": "Approximate width (meters)",
+                "name": "width",
+                "type": "integer"
+            },
+            {
+                "appearance": "w4",
+                "hint": "0 if dried at time of survey / leave empty if not known",
+                "label": "Approximate depth (feet)",
+                "name": "depth",
+                "type": "integer"
+            },
+            {
+                "appearance": "w4:4",
+                "label": "Photo of the pool at time of survey",
+                "name": "photo_repeat",
+                "repeat_count": 5,
+                "required": "yes",
+                "survey": [
+                    {
+                        "appearance": "w4",
+                        "hint": "Take a photo of the full pool if possible. Add special features if any. Take photo of disturbances, litter, and vandalism if encountered.",
+                        "label": "Photo",
+                        "name": "photo",
+                        "type": "image"
+                    }
+                ],
+                "type": "begin repeat"
+            },
+            {
+                "appearance": "w4",
+                "hint": "Choose all that apply",
+                "label": "Landscape setting",
+                "name": "landscape_setting",
+                "required": "yes",
+                "type": "select_multiple landscape_setting"
+            },
+            {
+                "appearance": "w4 minimal",
+                "label": "Pool origin",
+                "name": "pool_origin",
+                "required": "yes",
+                "type": "select_one pool_origin"
+            },
+            {
+                "appearance": "w4 multiline",
+                "hint": "Describe any recent modification to the pool and associated landscape (NA if not applicable)",
+                "label": "Vernal pool condition",
+                "name": "pool_condition",
+                "type": "text"
+            },
+            {
+                "appearance": "w4 minimal",
+                "label": "Parent material (that best applies to this pool)",
+                "name": "parent_material",
+                "required": "yes",
+                "type": "select_one parent_material"
+            },
+            {
+                "appearance": "w4 minimal",
+                "label": "Aquatic resource type that best applies to this pool (choose dominant)",
+                "name": "aquatic_type",
+                "type": "select_one aquatic_type"
+            },
+            {
+                "appearance": "w4 minimal",
+                "label": "Predominant substrate",
+                "name": "substrate",
+                "type": "select_one substrate"
+            },
+            {
+                "appearance": "w4 minimal",
+                "label": "Pool hydroperiod",
+                "name": "hydroperiod",
+                "type": "select_one hydroperiod"
+            },
+            {
+                "appearance": "w4 minimal",
+                "label": "Hydrology: Inlet/outlet",
+                "name": "hydrology",
+                "type": "select_one hydrology"
+            },
+            {
+                "appearance": "w4",
+                "label": "Is water present?",
+                "name": "has_water",
+                "type": "select_one yes_no"
+            },
+            {
+                "appearance": "w4 minimal",
+                "label": "Water quality",
+                "name": "water_quality",
+                "relevant": "${has_water} = 'yes'",
+                "type": "select_one water_quality"
+            },
+            {
+                "appearance": "w2",
+                "label": "Pool edge: temperature (Celcius)",
+                "name": "pool_edge_temperature",
+                "relevant": "${has_water} = 'yes'",
+                "type": "decimal"
+            },
+            {
+                "appearance": "w2",
+                "label": "Pool edge: pH",
+                "name": "pool_edge_ph",
+                "relevant": "${has_water} = 'yes'",
+                "type": "decimal"
+            },
+            {
+                "appearance": "w2",
+                "label": "Pool center: temperature (Celcius)",
+                "name": "pool_center_temperature",
+                "relevant": "${has_water} = 'yes'",
+                "type": "decimal"
+            },
+            {
+                "appearance": "w2",
+                "label": "Pool center: pH",
+                "name": "pool_center_ph",
+                "relevant": "${has_water} = 'yes'",
+                "type": "decimal"
+            }
+        ],
+        "type": "begin group"
+    },
+    {
+        "appearance": "field-list",
+        "label": "Vernal Pool Envelope and Critical Habitat Area Characteristics",
+        "name": "envelope",
+        "survey": [
+            {
+                "appearance": "w4",
+                "hint": "Pick all that apply",
+                "label": "Land-use type withing the 100-ft vernal pool envelope",
+                "name": "land_use_proximal",
+                "type": "select_multiple land_use"
+            },
+            {
+                "appearance": "w4",
+                "hint": "Pick all that apply",
+                "label": "Land-use type withing the 100 - 750-ft vernal pool envelope",
+                "name": "land_use_distant",
+                "type": "select_multiple land_use"
+            },
+            {
+                "appearance": "w4",
+                "label": "Are there one or more barriers to vernal pool fauna movement within the envelope and/or critical terrestrial habitat?",
+                "name": "barriers",
+                "type": "select_one yes_no_unknown"
+            },
+            {
+                "appearance": "w4",
+                "hint": "Include notes about litter and debris, foot traffic, presence of dogs (leashed and unleashed), presence of invasives, proximity to trails, etc.",
+                "label": "Explain the nature of the barrier(s)",
+                "name": "barrier_text",
+                "relevant": "${barriers} = 'yes'",
+                "type": "text"
+            },
+            {
+                "appearance": "w4",
+                "label": "Is your answer based on:",
+                "name": "barrier_reason",
+                "relevant": "${barriers} = 'yes'",
+                "type": "select_multiple barrier_reason"
+            }
+        ],
+        "type": "begin group"
+    },
+    {
+        "appearance": "field-list",
+        "label": "Rapid Plant Community Assessment",
+        "name": "plants",
+        "survey": [
+            {
+                "appearance": "w4",
+                "label": "Pool canopy cover at time of survey (%)",
+                "name": "canopy_cover",
+                "required": "yes",
+                "type": "decimal"
+            },
+            {
+                "appearance": "w4 minimal",
+                "label": "% of water surface shaded by trees (> 12')",
+                "name": "water_shaded_trees",
+                "type": "select_one percent_range"
+            },
+            {
+                "appearance": "w4",
+                "hint": "What seems to be 1-3 species that are prevalent at the site (>30% of all tree sp.)",
+                "label": "Dominant tree species (if present)",
+                "name": "tree_species",
+                "type": "select_multiple tree_species"
+            },
+            {
+                "appearance": "w4 minimal",
+                "label": "% of water surface shaded by shrubs (> 12')",
+                "name": "water_shaded_shrubs",
+                "type": "select_one percent_range"
+            },
+            {
+                "appearance": "w4",
+                "hint": "A natural barrier refers to a physical feature that protects or hinders travel through. Green briers (smilax sp.) for instance are good help to shelter a pool from wandering humans and dogs.",
+                "label": "Are there any natural barriers preventing pool access (by humans)?",
+                "name": "human_barrier",
+                "type": "select_one yes_no"
+            },
+            {
+                "appearance": "w4 multiline",
+                "label": "Please describe the natural barrier",
+                "name": "human_barrier_description",
+                "relevant": "${human_barrier} = 'yes'",
+                "type": "text"
+            },
+            {
+                "appearance": "w4",
+                "label": "Are invasive plant species present?",
+                "name": "invasives",
+                "required": "yes",
+                "type": "select_one yes_no_unknown"
+            },
+            {
+                "appearance": "w4 horizontal",
+                "label": "Multiflora rosa",
+                "name": "multiflora_rosa",
+                "relevant": "${invasives} = 'yes'",
+                "type": "select_one yes_no_unknown"
+            },
+            {
+                "appearance": "w4 horizontal",
+                "label": "Glossy buckthorn",
+                "name": "glossy_buckthorn",
+                "relevant": "${invasives} = 'yes'",
+                "type": "select_one yes_no_unknown"
+            },
+            {
+                "appearance": "w4 horizontal",
+                "label": "Garlic mustard",
+                "name": "garlic_mustard",
+                "relevant": "${invasives} = 'yes'",
+                "type": "select_one yes_no_unknown"
+            },
+            {
+                "appearance": "w4 horizontal",
+                "label": "Japanese knotweed",
+                "name": "japanese_knotweed",
+                "relevant": "${invasives} = 'yes'",
+                "type": "select_one yes_no_unknown"
+            },
+            {
+                "appearance": "w4 horizontal",
+                "label": "Barberry species (Japanese or European)",
+                "name": "barberry",
+                "relevant": "${invasives} = 'yes'",
+                "type": "select_one yes_no_unknown"
+            },
+            {
+                "appearance": "w4 multiline",
+                "label": "If there are invasive plants at the location, please detail further",
+                "name": "invasives_detail",
+                "relevant": "${invasives} = 'yes'",
+                "type": "text"
+            },
+            {
+                "appearance": "w4",
+                "label": "Do you see other species of invasive plant species than the ones listed above?",
+                "name": "other_invasives",
+                "relevant": "${invasives} = 'yes'",
+                "type": "select_one yes_no_unknown"
+            },
+            {
+                "appearance": "w4 multiline",
+                "hint": "If the species of invasive was not listed above, list it here. Describe for each invasive their extent: sparse, dense, where, etc. If you're not sure provide a few clues (describe what you see if possible).",
+                "label": "Please detail further",
+                "name": "other_invasives_detail",
+                "relevant": "${other_invasives} = 'yes'",
+                "type": "text"
+            },
+            {
+                "appearance": "w4 multiline",
+                "hint": "Are there broadleaf herb species (including cranberries), grminoids? List the dominant, and the non-dominants of all categories. Also indicate if possible the % of the pool bottom that is covered by plants.",
+                "label": "General description of the plant community at location",
+                "name": "general_plant_detail",
+                "type": "text"
+            }
+        ],
+        "type": "begin group"
+    },
+    {
+        "appearance": "field-list",
+        "label": "Present Species (Obligate and Others)",
+        "name": "present_species",
+        "survey": [
+            {
+                "appearance": "w4",
+                "hint": "Vernal pool obligate species include: salamanders, wood frogs, fairy shrimp.",
+                "label": "Do you hear or see any obligate species?",
+                "name": "obligates",
+                "required": "yes",
+                "type": "select_one yes_no"
+            },
+            {
+                "appearance": "w4:4",
+                "label": "Wood frog",
+                "name": "wood_frog",
+                "relevant": "${obligates} = 'yes'",
+                "survey": [
+                    {
+                        "appearance": "w2",
+                        "label": "eggs",
+                        "name": "eggs",
+                        "type": "integer"
+                    },
+                    {
+                        "appearance": "w1",
+                        "label": "juveniles",
+                        "name": "juveniles",
+                        "type": "integer"
+                    },
+                    {
+                        "appearance": "w1",
+                        "label": "adults",
+                        "name": "adults",
+                        "type": "integer"
+                    }
+                ],
+                "type": "begin group"
+            },
+            {
+                "appearance": "w4:4",
+                "label": "Spotted salamander",
+                "name": "spotted_salamander",
+                "relevant": "${obligates} = 'yes'",
+                "survey": [
+                    {
+                        "appearance": "w2",
+                        "label": "eggs",
+                        "name": "eggs",
+                        "type": "integer"
+                    },
+                    {
+                        "appearance": "w1",
+                        "label": "juveniles",
+                        "name": "juveniles",
+                        "type": "integer"
+                    },
+                    {
+                        "appearance": "w1",
+                        "label": "adults",
+                        "name": "adults",
+                        "type": "integer"
+                    }
+                ],
+                "type": "begin group"
+            },
+            {
+                "appearance": "w4:4",
+                "label": "Marbled salamander",
+                "name": "marbled_salamander",
+                "relevant": "${obligates} = 'yes'",
+                "survey": [
+                    {
+                        "appearance": "w2",
+                        "label": "eggs",
+                        "name": "eggs",
+                        "type": "integer"
+                    },
+                    {
+                        "appearance": "w1",
+                        "label": "juveniles",
+                        "name": "juveniles",
+                        "type": "integer"
+                    },
+                    {
+                        "appearance": "w1",
+                        "label": "adults",
+                        "name": "adults",
+                        "type": "integer"
+                    }
+                ],
+                "type": "begin group"
+            },
+            {
+                "appearance": "w4:4",
+                "label": "Other",
+                "name": "other",
+                "relevant": "${obligates} = 'yes'",
+                "survey": [
+                    {
+                        "appearance": "w2",
+                        "label": "eggs",
+                        "name": "eggs",
+                        "type": "integer"
+                    },
+                    {
+                        "appearance": "w1",
+                        "label": "juveniles",
+                        "name": "juveniles",
+                        "type": "integer"
+                    },
+                    {
+                        "appearance": "w1",
+                        "label": "adults",
+                        "name": "adults",
+                        "type": "integer"
+                    }
+                ],
+                "type": "begin group"
+            },
+            {
+                "appearance": "w4",
+                "label": "Obligate species - Fairy shrimp",
+                "name": "fairy_shrimp",
+                "relevant": "${obligates} = 'yes'",
+                "type": "select_one yes_no"
+            },
+            {
+                "appearance": "w4 multiline",
+                "hint": "Numer of individuals, eggmasses, what developmental phase, etc.",
+                "label": "If you recorded any species above, add details",
+                "name": "obligates_detail",
+                "relevant": "${obligates} = 'yes'",
+                "type": "text"
+            },
+            {
+                "appearance": "w4:4",
+                "label": "Species photos",
+                "name": "photo_repeat_species",
+                "relevant": "${obligates} = 'yes'",
+                "repeat_count": 10,
+                "survey": [
+                    {
+                        "appearance": "w4",
+                        "hint": "Take one photo per species recorded (for visual sightings).",
+                        "label": "Photo",
+                        "name": "photo",
+                        "type": "image"
+                    }
+                ],
+                "type": "begin repeat"
+            },
+            {
+                "appearance": "w4 multiline",
+                "hint": "List what species (and their developmental stage) and how many of any other herp species you've encountered. Herp species include: American toad, gray tree frog, green frog, bull frog, spring peeper, painted turtle, snapping turtle, spotted turtle. Non-herp species include avian species, invertebrates, etc.",
+                "label": "Any other herp and non herp species observed?",
+                "name": "other_species",
+                "type": "text"
+            }
+        ],
+        "type": "begin group"
+    },
+    {
+        "appearance": "field-list",
+        "hint": "From Earthwise Aware: Thanks for your work and time! We appreciate it greatly!",
+        "label": "End of Session Info",
+        "name": "end",
+        "survey": [
+            {
+                "appearance": "w4",
+                "label": "Session duration (minutes)",
+                "name": "duration",
+                "type": "integer"
+            },
+            {
+                "appearance": "w4 multiline",
+                "label": "If you have anything else that you want to add or comment about. This is your chance!",
+                "name": "comment",
+                "type": "text"
+            }
+        ],
+        "type": "begin group"
+    }
+]
